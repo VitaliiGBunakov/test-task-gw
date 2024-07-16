@@ -2,13 +2,13 @@ version: '3.8'
 services:
 
   mysql:
-    image: mysql:8.4.1
+    image: mysql:latest
     container_name: mysql-tt
     ports:
       - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=rootpassword
-      - MYSQL_DATABASE=test-task-db
+      - MYSQL_DATABASE=tdb
     volumes:
       - mysql-data:/var/lib/mysql
 
@@ -23,7 +23,7 @@ services:
       - DB_PORT=3306
       - DB_USER=root
       - DB_PASSWORD=rootpassword
-      - DB_NAME=test-task-db
+      - DB_NAME=tdb
     depends_on:
       - mysql
 

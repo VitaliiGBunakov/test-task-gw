@@ -3,6 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
+import { JobsModule } from './modules/jobs/jobs.module';
+import { WorkersModule } from './modules/workers/workers.module';
+import { EmployersModule } from './modules/employers/employers.module';
 
 @Module({
   imports: [
@@ -12,11 +15,14 @@ import { DataSource } from 'typeorm';
       port: 3306,
       username: 'root',
       password: 'rootpassword',
-      database: 'test-task-db',
+      database: 'tdb',
       entities: [],
       synchronize: true,
       autoLoadEntities: true,
     }),
+    EmployersModule,
+    WorkersModule,
+    JobsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
