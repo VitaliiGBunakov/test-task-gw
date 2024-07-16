@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "c8cabe5d-3e32-4e25-9c18-c81855b835f4",
+		"name": "tt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28718239",
+		"_collection_link": "https://www.postman.com/vitalii-bunakov/workspace/test-task-gw/collection/28718239-c8cabe5d-3e32-4e25-9c18-c81855b835f4?action=share&source=collection_link&creator=28718239"
+	},
+	"item": [
+		{
+			"name": "Employer",
+			"item": []
+		},
+		{
+			"name": "Job",
+			"item": []
+		},
+		{
+			"name": "Worker",
+			"item": []
+		}
+	]
+}
